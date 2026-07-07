@@ -10,7 +10,7 @@
            remote="korg" />
 
 <!-- Manifest of the earliest Android build available on AOSP - Android 1.0 build TC3 from 2008-10-21. Manifest made on 14 June 2026. -->
-  <project path="build" name="platform/build" revision="b6c1cf6de79035f58b512f4400db458c8401379a">
+  <project path="build" name="android_build" remote="github">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -32,7 +32,7 @@
   <!-- Originally named platform/recovery. -->
   <project path="recovery" name="platform/bootable/recovery" revision="23580ca27a0a8109312fdd36cc363ad1f4719889" />
   <project path="system/bluetooth" name="platform/system/bluetooth" revision="6c2d13d0c3a4505fdac56ae8d537a68218e072f1" />
-  <project path="system/core" name="platform/system/core" revision="4f6e8d7a00cbeda1e70cc15be9c4af1018bdad53" />
+  <project path="system/core" name="android_system_core" remote="github" />
   <project path="system/extras" name="platform/system/extras" revision="7341494707810f709855ea85ce03a8ec3ac8dbaf" />
   <project path="system/wlan/ti" name="platform/system/wlan/ti" revision="607e8a019b921eee008cd1e9ffc132318fabce7f" />
 
