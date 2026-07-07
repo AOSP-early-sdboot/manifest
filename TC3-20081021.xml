@@ -4,7 +4,8 @@
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com" />
   <remote  name="github"
-           fetch="https://github.com/froyocomb" />
+           revision="TC3-20081021"
+           fetch="https://github.com/AOSP-early-sdboot" />
   <default revision="master"
            remote="korg" />
 
@@ -14,8 +15,7 @@
   </project>
 
   <project path="kernel"
-           name="kernel_common" remote="github"
-           revision="20c3cb8bcefbfe7cf27cbf2ca758a0bac804ef85" />
+           name="kernel_common" remote="github" />
 
   <project path="bionic" name="platform/bionic" revision="a27d2baa0c1a2ec70f47ea9199b1dd6762c8a349" />
   <!-- Originally named platform/bootloader/legacy. -->
@@ -28,7 +28,7 @@
   <project path="frameworks/policies/base" name="platform/frameworks/policies/base" revision="58096b60fc111564c663d685d3b147ea4a5f3832" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" revision="d6054a36475b5ff502b4af78f7d272a713c1a8e7" />
   <project path="hardware/ril" name="platform/hardware/ril" revision="dbbb392e15b5ace6f19e76c49c80ea14292e8a4d" />
-  <project path="prebuilt" name="platform/prebuilt" revision="e7214a75e616f54c5de3b38bfceae11ee5f1b9eb" />
+  <project path="prebuilt" name="android_prebuilt" remote="github" />
   <!-- Originally named platform/recovery. -->
   <project path="recovery" name="platform/bootable/recovery" revision="23580ca27a0a8109312fdd36cc363ad1f4719889" />
   <project path="system/bluetooth" name="platform/system/bluetooth" revision="6c2d13d0c3a4505fdac56ae8d537a68218e072f1" />
@@ -97,6 +97,8 @@
   <project path="external/freetype" name="platform/external/freetype" revision="a38fc482eeeb2c1929803c233835369dcf1b8781" />
 
   <project path="external/gdata" name="platform/external/gdata" revision="27eda2eccd3729366a5545a21238ee9b2960171c" />
+
+  <project path="external/genext2fs" name="platform/external/genext2fs" revision="f4a0b4d282a1718ac6e3fff10d02aa877e294324" />
 
   <project path="external/giflib" name="platform/external/giflib" revision="56f1b66a4b20a7f85865c852dd46df5e4635a9d6" />
 
@@ -167,4 +169,7 @@
   <project path="external/yaffs2" name="platform/external/yaffs2" revision="85ff57da47aaa93dc0018940cbd6b1f923664b46" />
 
   <project path="external/zlib" name="platform/external/zlib" revision="edc3fb3b9f9250ceacaf07a83beb5dde02807f9c" />
+
+  <!-- HTC Dream support. -->
+  <project path="vendor/htc/dream" name="android_vendor_htc_dream_open" remote="github" />
 </manifest>
